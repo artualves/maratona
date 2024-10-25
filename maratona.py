@@ -30,3 +30,10 @@ class Nadador(Atleta):
 class Ciclista(Atleta):
     def pedalar(self):
         return "Pedalando..."
+    
+class Triatleta(Corredor, Nadador, Ciclista):
+    def realizar_maratona(self):
+        info = self.nadar()
+        info += self.pedalar()
+        info += self.correr()
+        return info

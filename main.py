@@ -15,3 +15,8 @@ if __name__ == "__main__":
     print(C1)
     print(C1.aquecer())
     print(C1.pedalar())
+
+    T1 = Triatleta("Milton Jesus", 20, 80.7)
+    print(T1)
+    print(T1.aquecer())
+    print(T1.realizar_maratona())
